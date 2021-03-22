@@ -1,5 +1,5 @@
 
-/*
+
 // Ex 1
 console.log('Aadhar Bhatnagar');
 
@@ -8,7 +8,7 @@ var readlineSync = require('readline-sync');
 
 var userName = readlineSync.question('What is your name ?');
 
-//console.log(userName);
+console.log(userName);
 
 // Ex 3
 
@@ -60,48 +60,45 @@ var secondNumber = parseInt(readlineSync.question('Enter second number\n'));
 
 console.log(addTwoNumbers(firstNumber,secondNumber));
 
-*/
 
 // Ex 8
 
-// var score = 0;
+var score = 0;
 
-// function miniquest(question , rightAns){
-//   var userAns = readlineSync.question(question+'\n');
+function miniquest(question , rightAns){
+  var userAns = readlineSync.question(question+'\n');
 
-//   if(userAns === rightAns ){
-//     console.log('You are correct')
-//     score += 1;
-//   }
-//   else{
-//     console.log('You are wrong')
-//     if(score!=0){
-//       score -= 1;
-//     }
-//   }
-// }
+  if(userAns === rightAns ){
+    console.log('You are correct')
+    score += 1;
+  }
+  else{
+    console.log('You are wrong')
+    if(score!=0){
+      score -= 1;
+    }
+  }
+}
 
-// miniquest('Is Delhi a country', 'no');
-// miniquest('Is Europe a country', 'no');
-// miniquest('Is India a country', 'yes');
-// miniquest('Is Bhutan a country', 'yes');
+miniquest('Is Delhi a country', 'no');
+miniquest('Is Europe a country', 'no');
+miniquest('Is India a country', 'yes');
+miniquest('Is Bhutan a country', 'yes');
 
-// console.log(score);
+console.log(score);
 
 // Ex 9
 var readlineSync = require('readline-sync');
 
-// for(var i =0;i<5;i++){
-//   console.log('Aadhar Bhatnagar');
-// }
+for(var i =0;i<5;i++){
+  console.log('Aadhar Bhatnagar');
+}
 
-// var n = readlineSync.question('Enter the number of rows\n');
+var n = readlineSync.question('Enter the number of rows\n');
 
-// for(let row =0; row<n ;row++ ){
-//   for(let col =0; col<=row ;col++){
-//     process.stdout.write('*');
-//   }
-//   process.stdout.write('\n');
-// }
-
-// Ex 10
+for(let row =0; row<n ;row++ ){
+  for(let col =0; col<=row ;col++){
+    process.stdout.write('*');
+  }
+  process.stdout.write('\n');
+}
